@@ -2,25 +2,68 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+type AppProps = {};
+type AppState = { date: Date, text: string, numb: number };
+class App extends React.Component<AppProps, AppState>{
+  timerID: number;
+  constructor(props: object){
+    console.log("constructor")
+    super(props)
+    this.timerID = 0;
+    this.state = {
+      date: new Date(),
+      text: "Adrian",
+      numb: 0
+    };
+    this.click = this.click.bind(this);
+  }
+
+  render(){
+    console.log("render")
+    return(
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <h2>It is {this.state.text}</h2>
+        <h2>It is {this.state.numb}</h2>
+        <button onClick={this.click}>CLICK ME!!!</button>
+      </div>
+    );
+  }
+
+  click(): void{
+    this.setState({
+      text: "Adrian Fedeles"
+    })
+    this.setState((state, props)=>({
+      numb : state.numb + 1
+    })
+    )
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
+  componentDidMount(){
+    console.log("did mount")
+    // this.timerID = window.setInterval(
+    //   () => this.tick(),
+    //   1000
+    // );
+  }
+
+  componentDidUpdate(){
+    console.log("did update")
+  }
+
+  componentWillUnmount(){
+    console.log("will unmount")
+    clearInterval(this.timerID);
+  }
+
 }
 
 export default App;
