@@ -1,0 +1,19 @@
+{
+  "name": "weatherappreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianFedeles/WeatherAppReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianFedeles/WeatherAppReact/issues"
+  },
+  "homepage": "https://github.com/AdrianFedeles/WeatherAppReact#readme"
+}
