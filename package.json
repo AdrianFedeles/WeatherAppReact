@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AdrianFedeles/WeatherAppReact/issues"
   },
-  "homepage": "https://github.com/AdrianFedeles/WeatherAppReact#readme"
+  "homepage": "https://github.com/AdrianFedeles/WeatherAppReact#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

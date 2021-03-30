@@ -4,18 +4,19 @@ import './App.css';
 
 type AppProps = {};
 type AppState = { date: Date, text: string, numb: number };
-class App extends React.Component<AppProps, AppState>{
+class App extends React.Component<AppProps,AppState>{
   timerID: number;
   constructor(props: object){
     console.log("constructor")
     super(props)
-    this.timerID = 0;
+    this.timerID = 0; 
     this.state = {
       date: new Date(),
       text: "Adrian",
       numb: 0
     };
     this.click = this.click.bind(this);
+    //busy indicator
   }
 
   render(){
@@ -57,6 +58,11 @@ class App extends React.Component<AppProps, AppState>{
 
   componentDidUpdate(){
     console.log("did update")
+    //call spre api
+    //oprim buysindicator
+    //parsam datele din json
+    //forecast -> array cu toate zilele de forecat
+    //vreme general -> json cu informatiile potrivite
   }
 
   componentWillUnmount(){
