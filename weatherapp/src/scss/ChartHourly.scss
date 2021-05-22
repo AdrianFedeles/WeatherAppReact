@@ -1,0 +1,62 @@
+@import "./test_Background_Colors";//@include test_Background_Colors(rgb(255, 196, 0));
+@import "./align_items_with_display_justifyContent_textAlign";//@include align_items_with_display_justifyContent_textAlign(flex,center,center);
+@import "./width_Height_Content";//@include width_Height_Content(100%, auto);
+@import "./font_size_text";//@include font_size_text(xx-large);
+@import "./margin_top_right_bottom_left";//@include margin_top_right_bottom_left(10px, 0, 10px, 0);
+@import "./item_color_background_color"; //@include item_color_background_color( red, blue);
+
+.Container_Chart_Hourly{
+    @include test_Background_Colors(rgb(255, 102, 0));
+    @include width_Height_Content(100%, auto);
+    // @include item_color_background_color( white, null);
+    .Top_Section_Hourly{
+        // @include align_items_with_display_justifyContent_textAlign(flex,flex-start,center);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include width_Height_Content(100%, auto);
+        @include test_Background_Colors(rgb(238, 255, 0));
+        .Paragraph_Section_Chart_Hourly{
+            @include test_Background_Colors(rgb(187, 255, 0));
+            @include width_Height_Content(15%, auto);
+            p{
+                @include font_size_text(25px);
+                @include margin_top_right_bottom_left(0, 0, 0, 10px);
+                font-weight: bold;
+            }
+        }
+        .Space_Bitwin_Paragrapf_And_Buttons{
+            @include test_Background_Colors(rgb(0, 255, 85));
+            @include width_Height_Content(70%, auto);
+        }
+        .Buttons_Section_Chart_Hourly{
+            @include test_Background_Colors(rgb(0, 255, 213));
+            @include width_Height_Content(15%, auto);
+            .Button_Summary_Section_Chart_Hourly{
+                @include test_Background_Colors(rgba(0, 153, 255, 0));
+                @include width_Height_Content(40%, 25px);
+                @include margin_top_right_bottom_left(0, 20px, 0, 0);
+            }
+            .Button_Details_Section_Chart_Hourly{
+                @include test_Background_Colors(rgba(0, 47, 255, 0));
+                @include width_Height_Content(40%, 25px);
+                button{
+                    @include width_Height_Content(40%, 100%);
+                    
+                }
+            }
+            
+        }
+    }
+    .Details_Section_Buttons_Hourly{
+        .Summary_Chart_Hourly{
+            @include test_Background_Colors(rgb(98, 0, 255));
+            @include width_Height_Content(100%, 30vh);
+        }
+        .Details_Table_Hourly{
+            @include test_Background_Colors(rgb(204, 0, 255));
+            @include width_Height_Content(100%, 30vh);
+        }
+    }
+    
+}

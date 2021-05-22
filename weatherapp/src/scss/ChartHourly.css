@@ -1,0 +1,75 @@
+.Container_Chart_Hourly {
+  background-color: #ff6600;
+  width: 100%;
+  height: auto;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #eeff00;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Paragraph_Section_Chart_Hourly {
+  background-color: #bbff00;
+  width: 15%;
+  height: auto;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Paragraph_Section_Chart_Hourly p {
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  font-weight: bold;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Space_Bitwin_Paragrapf_And_Buttons {
+  background-color: #00ff55;
+  width: 70%;
+  height: auto;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Buttons_Section_Chart_Hourly {
+  background-color: #00ffd5;
+  width: 15%;
+  height: auto;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Buttons_Section_Chart_Hourly .Button_Summary_Section_Chart_Hourly {
+  background-color: rgba(0, 153, 255, 0);
+  width: 40%;
+  height: 25px;
+  margin: 0 20px 0 0;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Buttons_Section_Chart_Hourly .Button_Details_Section_Chart_Hourly {
+  background-color: rgba(0, 47, 255, 0);
+  width: 40%;
+  height: 25px;
+}
+
+.Container_Chart_Hourly .Top_Section_Hourly .Buttons_Section_Chart_Hourly .Button_Details_Section_Chart_Hourly button {
+  width: 40%;
+  height: 100%;
+}
+
+.Container_Chart_Hourly .Details_Section_Buttons_Hourly .Summary_Chart_Hourly {
+  background-color: #6200ff;
+  width: 100%;
+  height: 30vh;
+}
+
+.Container_Chart_Hourly .Details_Section_Buttons_Hourly .Details_Table_Hourly {
+  background-color: #cc00ff;
+  width: 100%;
+  height: 30vh;
+}
+/*# sourceMappingURL=ChartHourly.css.map */

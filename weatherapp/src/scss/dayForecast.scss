@@ -1,0 +1,46 @@
+@import "./test_Background_Colors";//@include test_Background_Colors(rgb(255, 196, 0));
+@import "./align_items_with_display_justifyContent_textAlign";//@include align_items_with_display_justifyContent_textAlign(flex,center,center); sau (flex, null, null)
+@import "./width_Height_Content";//@include width_Height_Content(100%, auto);
+@import "./font_size_text";//@include font_size_text(xx-large);
+@import "./margin_top_right_bottom_left";//@include margin_top_right_bottom_left(10px, 0, 10px, 0);
+@import "./item_color_background_color"; //@include item_color_background_color( red, blue);
+
+
+.Container_Day_Forecast{
+    @include width_Height_Content(100%, auto);
+    @include test_Background_Colors(rgba(134, 134, 134, 0.493));
+    @include margin_top_right_bottom_left(15px, 10px, 15px, 10px);
+    flex-direction: column;
+    @include align_items_with_display_justifyContent_textAlign(flex, null, null);
+    .Date_Icon_Day_Forecast{
+        // @include test_Background_Colors(rgb(255, 136, 0));
+        @include width_Height_Content(90%, auto);
+        @include margin_top_right_bottom_left(5px, 0, 0, 10px);
+        img {
+            @include width_Height_Content(40px, 35px);
+            @include margin_top_right_bottom_left(0, 0, 0, -5px);
+        }
+    }
+    .MaxC_MinC_Day_Forecast{
+        // @include test_Background_Colors(rgb(140, 0, 255));
+        @include width_Height_Content(90%, auto);
+        @include align_items_with_display_justifyContent_textAlign(flex, null, null);
+        flex-direction: row;
+        @include margin_top_right_bottom_left(0, 0, 0, 10px);
+        .MaxC_Day_Forecast{
+            @include margin_top_right_bottom_left(0, 10px, 0, 0);
+            @include font_size_text(20px)
+        }
+        .MinC_Day_Forecast{
+            @include margin_top_right_bottom_left(5px, 0, 0, 5px);
+        }
+    }
+    .Paragraph_status_Day_Forecast{
+        @include margin_top_right_bottom_left(0, 0, 20px, 10px);
+        @include width_Height_Content(90%, auto);
+        // @include test_Background_Colors(rgb(255, 0, 255));
+    }
+}
+
+
+

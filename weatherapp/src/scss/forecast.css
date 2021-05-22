@@ -1,0 +1,36 @@
+.Container {
+  width: 100%;
+  height: 100vh;
+}
+
+.Container .Section_General_Temperature {
+  color: white;
+  background: 0;
+  width: auto;
+  height: auto;
+}
+
+.Container .Section_Forecast_Daily {
+  color: white;
+  background: 0;
+  width: 100%;
+  height: auto;
+}
+
+.Container .Section_Forecast_Daily .Parafraph_Section_Forecast_Daily {
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  font-weight: bold;
+}
+
+.Container .Section_Forecast_Daily .Forecast_Daily {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+/*# sourceMappingURL=forecast.css.map */

@@ -1,0 +1,66 @@
+@import "./test_Background_Colors";//@include test_Background_Colors(rgb(255, 196, 0));
+@import "./align_items_with_display_justifyContent_textAlign";//@include align_items_with_display_justifyContent_textAlign(flex,center,center);
+@import "./width_Height_Content";//@include width_Height_Content(100%, auto);
+@import "./font_size_text";//@include font_size_text(xx-large);
+@import "./margin_top_right_bottom_left";//@include margin_top_right_bottom_left(10px, 0, 10px, 0);
+@import "./item_color_background_color"; //@include item_color_background_color( red, blue);
+
+
+.Container_General_Temperature_General{
+    @include width_Height_Content(100%, auto);
+    @include align_items_with_display_justifyContent_textAlign(flex,center,center);
+    // @include test_Background_Colors(rgb(255, 196, 0));
+    flex-direction: column;
+}
+.Top_General_Temperature{
+    @include width_Height_Content(100%,auto);
+    display: flex;
+    flex-direction: row;
+    @include align_items_with_display_justifyContent_textAlign(flex,center,center);
+    @include font_size_text(xx-large);
+    @include margin_top_right_bottom_left(10px, 0, 10px, 0);
+    .City_Peneral_Temperature{
+        @include margin_top_right_bottom_left(0, 5px, 0, 0);
+    }
+}
+.Img_Temp_General_Temperature{
+    @include width_Height_Content(100%,auto);
+    flex-direction: row;
+    @include align_items_with_display_justifyContent_textAlign(flex,center,center);
+    @include margin_top_right_bottom_left(0, 0, 10px, 0);
+    p{
+        @include margin_top_right_bottom_left(15px, 0, 0, 0);
+        @include font_size_text(45px);
+        
+    }
+    img {
+        @include width_Height_Content(80px,65px);
+
+    }
+}
+.Status_Update_General_Temperature{
+    @include width_Height_Content(100%,auto);
+    .Status_Paragraph_Status_Update_General_Temperature{
+        @include font_size_text(25px);
+        @include margin_top_right_bottom_left(0, 0, 10px, 0);
+    }
+    .Update_Paragraph_Status_Update_General_Temperature{
+        font-weight: bold;
+        @include margin_top_right_bottom_left(0, 0, 10px, 0);
+    }
+}
+.Details_General_temperature{
+    @include width_Height_Content(100%,auto);
+    @include font_size_text(12px);
+    .First_Details_General_Temperature{
+        @include align_items_with_display_justifyContent_textAlign(flex,center,center);
+        flex-direction: row;
+    }
+    p{
+        @include margin_top_right_bottom_left(0, 30px, 5px, 0);
+    }
+    .Second-Details_General_Temperature{
+        @include align_items_with_display_justifyContent_textAlign(flex,center,center);
+        flex-direction: row;
+    }
+}

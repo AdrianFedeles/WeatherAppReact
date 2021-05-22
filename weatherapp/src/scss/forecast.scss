@@ -1,0 +1,34 @@
+@import "./test_Background_Colors";//@include test_Background_Colors(rgb(255, 196, 0));
+@import "./align_items_with_display_justifyContent_textAlign";//@include align_items_with_display_justifyContent_textAlign(flex,center,center);
+@import "./width_Height_Content";//@include width_Height_Content(100%, auto);
+@import "./font_size_text";//@include font_size_text(xx-large);
+@import "./margin_top_right_bottom_left";//@include margin_top_right_bottom_left(10px, 0, 10px, 0);
+@import "./item_color_background_color"; //@include item_color_background_color( red, blue);
+
+.Container{
+    @include width_Height_Content(100%, 100vh);
+    // @include test_Background_Colors(rgb(0, 238, 255));
+    .Section_General_Temperature{
+        @include item_color_background_color( white, 0);
+        @include width_Height_Content(auto, auto);
+        // @include test_Background_Colors(rgb(17, 0, 255));
+    }
+    .Section_Forecast_Daily{
+        @include item_color_background_color( white, 0);
+        @include width_Height_Content(100%, auto);
+        // @include test_Background_Colors(rgb(0, 255, 170));
+        .Parafraph_Section_Forecast_Daily{
+            // @include test_Background_Colors(rgb(0, 174, 255));
+            @include font_size_text(25px);
+            @include margin_top_right_bottom_left(0, 0, 0, 10px);
+            font-weight: bold;
+        }
+        .Forecast_Daily{
+            justify-content: space-between;
+            // @include test_Background_Colors(rgb(0, 255, 76));
+            @include align_items_with_display_justifyContent_textAlign(flex,null, null);
+            @include width_Height_Content(100vw, auto);
+            }
+    }
+}
+

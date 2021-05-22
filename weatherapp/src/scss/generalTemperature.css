@@ -1,0 +1,119 @@
+.Container_General_Temperature_General {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Top_General_Temperature {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+  margin: 10px 0 10px 0;
+}
+
+.Top_General_Temperature .City_Peneral_Temperature {
+  margin: 0 5px 0 0;
+}
+
+.Img_Temp_General_Temperature {
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.Img_Temp_General_Temperature p {
+  margin: 15px 0 0 0;
+  font-size: 45px;
+}
+
+.Img_Temp_General_Temperature img {
+  width: 80px;
+  height: 65px;
+}
+
+.Status_Update_General_Temperature {
+  width: 100%;
+  height: auto;
+}
+
+.Status_Update_General_Temperature .Status_Paragraph_Status_Update_General_Temperature {
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+.Status_Update_General_Temperature .Update_Paragraph_Status_Update_General_Temperature {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.Details_General_temperature {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+}
+
+.Details_General_temperature .First_Details_General_Temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Details_General_temperature p {
+  margin: 0 30px 5px 0;
+}
+
+.Details_General_temperature .Second-Details_General_Temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=generalTemperature.css.map */

@@ -1,0 +1,5 @@
+@mixin align_items_with_display_justifyContent_textAlign($display, $justify_conten, $text_align) {
+    display: $display;
+    justify-content: $justify_conten;
+    text-align: $text_align;
+}
