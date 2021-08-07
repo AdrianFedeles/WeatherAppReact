@@ -21,7 +21,8 @@ class HourlyComponent extends React.Component <any, any> {
         console.log('renderDetails');
         return (
         <div>
-            <DetailsHourly {...this.props} nrElems={8}></DetailsHourly>
+            <DetailsHourly {...this.props} nrElems={8
+            }></DetailsHourly>
         </div>);
     }
     renderState = () : any => {

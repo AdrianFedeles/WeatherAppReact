@@ -2,9 +2,12 @@ import React from 'react';
 import '../scss/generalTemperature.scss';
 import '../models/GeneralInfoModel'
 import GeneralInfoModel from '../models/GeneralInfoModel';
+import { loadWeatherData } from '../redux-saga/actions';
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
 type State = {};
-class GeneralTemperature extends React.Component <GeneralInfoModel, State> {
-    constructor(props: GeneralInfoModel){
+class GeneralTemperature extends React.Component <any, any> {
+    constructor(props: any){
         super(props)
     }
         render() {
@@ -40,6 +43,14 @@ class GeneralTemperature extends React.Component <GeneralInfoModel, State> {
     }
 }
 
+function mapStateToProps(state: any){
+    return {
+      generalInfo: state.general_info,
+    }
+  }
+  
+function mapDispatchToProps(dispatch: any){
+return bindActionCreators({ loadWeatherData }, dispatch);
+}
 
-
-export default GeneralTemperature;
+export default connect(mapStateToProps, mapDispatchToProps)(GeneralTemperature);

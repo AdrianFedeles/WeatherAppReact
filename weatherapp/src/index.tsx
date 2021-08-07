@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom';
 import './scss/index.css';
 import reportWebVitals from './reportWebVitals';
 import RouterApp from './components/RouterApp';
-
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Provider } from 'react-redux';
+import store from './redux-saga/store';
 
 ReactDOM.render(
-  <React.StrictMode>
-      <RouterApp/>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+        <div>
+          <RouterApp/>
+          <ToastContainer/>
+        </div>
+      
+    </React.StrictMode>
+  </Provider>
+  ,
   document.getElementById('root')
 );
 

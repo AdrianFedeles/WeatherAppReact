@@ -12,7 +12,7 @@ class ChartHourly extends React.Component<any,any>{
           
             series: [{
               name: "Temp",
-              data: this.props.dayInfo.map((item:any) => (item.temp))
+              data: this.props.dayInfo?.map((item:any) => (item.temp))
             }],
             options: {
               chart: {
